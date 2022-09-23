@@ -1,0 +1,59 @@
+div[role="navigation"]:before {
+ content: '';
+ position: absolute;
+ top: -5px;
+ bottom: -5px;
+ right: -5px;
+ left: -5px;
+ z-index: -1;
+ background: linear-gradient(90deg, #03a9f4, #f441a4, #ffeb3b, #03a9f4);
+ background-size: 400%;
+ filter: blur(30px);
+ opacity: 0;
+ transition: 0.5s;
+}
+div[role="navigation"]:hover:before {
+ filter: blur(30px);
+ opacity: 1;
+ animation: animate 8s linear infinite;
+}
+
+@keyframes animate {
+ 0% {
+  background-position: 0%;
+ }
+ 100% {
+  background-position: 400%;
+ }
+}
+/* webkit-scrollbar */
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    border-radius: 15px;
+}
+::-webkit-scrollbar{
+    background: #0d1117 !important;
+}
+
+
+#facebook .system-fonts--body label{
+    border: 1px solid #58a6ff !important;
+}
+
+.__fb-light-mode {
+    --web-wash: #0d1117 !important;
+    --nav-bar-background: #161b22 !important;
+    --primary-text: #d2a8ff !important;
+    --surface-background: #161b22 !important;
+    --shadow-1: #407bff52 !important;
+    --shadow-2: #407bff52 !important;
+    --secondary-icon: #58a6ff !important;
+    --secondary-text: #58a6ff !important;
+    --card-background:#002356 !important;
+    --card-background-flat: #0c2c54 !important;
+    --comment-background: #0d1117 !important;
+    --comment-footer-background: #0c2c54 !important;
+    --divider: #0d1117 !important;
+    --scroll-thumb: #009ffa !important;
+
+}
